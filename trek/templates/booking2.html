@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/booking2.css' %}" />
+  </head>
+  <body>
+    <!-- header starts -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container conthead">
+        <a class="navbar-brand" href="#"><i class="bi bi-feather"></i>Trek</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/booking/">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/booktickets/">Booked Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/login/"
+                ><i class="bi bi-door-open"></i>Login</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                ><i class="bi bi-door-open-fill"></i>Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- header ends -->
+
+
+    <div class="container conthead pt-3 pb-3">
+        <form action="" method="POST">
+            <div class="fs-3">PASSENGER1</div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="bi bi-feather"></i></span>
+                        <input type="text" name="firstname" class="form-control" placeholder="Firstname" aria-label="Username" aria-describedby="addon-wrapping">
+                      </div>
+                </div>
+                <div class="col"><div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping"><i class="bi bi-feather"></i></span>
+                    <input type="text" name="Lastname" class="form-control" placeholder="Lastrname" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">AGE</span>
+                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col mt-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>GENDER</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">+91</span>
+                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group mt-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">AADHAR NO</span>
+                        <input type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+                    <button class="btn btn-primary search" type="button">ADD</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+                    <button class="btn btn-primary search" type="button">BOOK <i class="bi bi-check-circle-fill"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="container conthead foo mt-4 mb-0" style="height: 100px">
+        <!-- <p class="col-1 justify-content-Start foo">@company</p> -->
+        <ul class="row list-unstyled navi textcenter">
+          <li><hr class="border border-white border-3 opacity-75" /></li>
+          <li class="col-md-1 navi-2">
+            <a class="nav-link active" href="/">@Trek</a>
+          </li>
+          <li class="col-md-1 navi-2 ico">
+            <a class="nav-link active" href="#"><i class="bi bi-facebook"></i></a>
+          </li>
+          <li class="col-md-1 navi-2 ico">
+            <a class="nav-link active" href="#"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="col-md-1 navi-2 ico">
+            <a class="nav-link active" href="#"
+              ><i class="bi bi-threads-fill"></i
+            ></a>
+          </li>
+          <li class="col-md-1 offset-md-5 navi-2 hov">
+            <a class="nav-link active" href="/"> Home</a>
+          </li>
+          <li class="col-md-1 navi-2 hov">
+            <a class="nav-link active" href="/booking/">Booking</a>
+          </li>
+          <li class="col-md-1 navi-2 hov">
+            <a class="nav-link active" href="/booktickets/">Booked Tickets</a>
+          </li>
+          <li class="col-md-1 navi-2 hov">
+            <a class="nav-link active" href="#">About Us </a>
+          </li>
+        </ul>
+        <!-- footer ends -->
+      </footer>
+    </body>
+  </html>

@@ -1,0 +1,123 @@
+body{
+    
+    align-items: center;
+    justify-content: center;
+}
+.cont{
+    margin-top: 100px;
+    background-color:#365486;
+    height: 100px;
+    width: 500px;
+}
+
+.form-label{
+    color: aliceblue;
+}
+
+/* header design */
+.container{   /* this navbar full */
+    background-color: #365486;
+    border-radius: 10px;
+    height: auto;
+    font-size: 18px;
+    color: white;
+    
+}
+ 
+.navbar-brand{
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+}
+.navbar-nav {
+    margin: auto; /* Center the navbar-nav */
+    
+    
+}
+.collapse.navbar-collapse{
+    background-color: #365486;
+    border-radius: 10px;
+
+}
+  
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Add margin between navbar items */
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+}
+
+.navbar-nav .nav-link.active:hover{ /* this is to when the home list is hover it changes to white */
+    background-color: #DCF2F1;
+    color: #0F1035;
+    border-radius: 10px;
+
+}
+.navbar-nav .nav-link.active:hover .bi {
+    color: #0F1035; /* Change icon color to #0F1035 when hovered */
+  }
+
+
+
+/* login icon */
+.nav-link.active .bi.bi-door-open,.bi.bi-door-open-fill{
+    color: white;
+    font-display: none;
+    margin: 10px;
+}
+
+/* footer design */
+
+.navi{
+
+    /* padding-top: 7px; */
+    /* justify-content:end; */
+}
+.navi-2{
+    
+    color: white;
+    text-align: center;
+    /* border: 1px solid black; */
+    /* background-color: aquamarine; */
+}
+.hov a:hover{
+    
+    background-color: white;
+    color: #0F1035;
+    border-radius: 7px;
+
+}
+
+.foo{
+    height: auto;
+}
+
+.ico{
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+/* one way or round button */
+/* Change color of the words */
+/* Default styles for unselected radio buttons */
+
+/* button in login  */
+.btn{
+    background-color: #365486;
+    color: white;
+    padding:10px;
+}
+
+.search{
+    background-color: #0F1035;
+    color: #DCF2F1;
+    border: none;
+    border-radius: 10px;
+}
+/* heading in login */
+.loginhead{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 5px;
+}
